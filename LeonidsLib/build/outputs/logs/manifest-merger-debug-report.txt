@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:1-16:12
+	package
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml
+application
+ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:11:5-14:19
+	android:allowBackup
+		ADDED from E:\AndroidStudioProjects\JetExpression\LeonidsLib\src\main\AndroidManifest.xml:12:9-35
