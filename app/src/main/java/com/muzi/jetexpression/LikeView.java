@@ -4,6 +4,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -25,7 +26,7 @@ import com.plattysoft.leonids.ParticleSystem;
  * 邮箱: lipeng@moyi365.com
  * 功能:
  */
-public class LikeButton extends LinearLayout implements View.OnClickListener {
+public class LikeView extends LinearLayout implements View.OnClickListener {
 
     private int[] iconInts = new int[]{R.drawable.af0,
             R.drawable.af1,
@@ -57,23 +58,34 @@ public class LikeButton extends LinearLayout implements View.OnClickListener {
     private Long sizeDuration = 200L;
 
 
-    public LikeButton(Context context) {
+    public LikeView(Context context) {
         super(context);
-        init();
+        init(context, null);
     }
 
-    public LikeButton(Context context, @Nullable AttributeSet attrs) {
+    public LikeView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context, attrs);
     }
 
-    public LikeButton(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public LikeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
+        init(context, attrs);
     }
 
-    private void init() {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.view_like_button, this, true);
+    private void init(Context context, @Nullable AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LikeView);
+        int index = typedArray.getInt(R.styleable.LikeView_android_orientation, LinearLayout.HORIZONTAL);
+        typedArray.recycle();
+        View view = null;
+        switch (index) {
+            case LinearLayout.HORIZONTAL:
+                view = LayoutInflater.from(getContext()).inflate(R.layout.view_like_horizontal, this, true);
+                break;
+            case LinearLayout.VERTICAL:
+                view = LayoutInflater.from(getContext()).inflate(R.layout.view_like_vertical, this, true);
+                break;
+        }
         ivLike = view.findViewById(R.id.iv_like);
         txNumber = view.findViewById(R.id.tx_number);
         view.setOnClickListener(this);
@@ -124,8 +136,8 @@ public class LikeButton extends LinearLayout implements View.OnClickListener {
      */
     private void startLikedAnimator() {
         if (ivSizeSet == null) {
-            ObjectAnimator animatorX = ObjectAnimator.ofFloat(ivLike, "scaleX", 1f, 1.2f,1f);
-            ObjectAnimator animatorY = ObjectAnimator.ofFloat(ivLike, "scaleY", 1f, 1.2f,1f);
+            ObjectAnimator animatorX = ObjectAnimator.ofFloat(ivLike, "scaleX", 1f, 1.2f, 1f);
+            ObjectAnimator animatorY = ObjectAnimator.ofFloat(ivLike, "scaleY", 1f, 1.2f, 1f);
             ivSizeSet = new AnimatorSet();
             ivSizeSet.playTogether(animatorX, animatorY);
             ivSizeSet.setDuration(sizeDuration);

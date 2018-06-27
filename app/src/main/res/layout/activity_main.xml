@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.muzi.jetexpression.LikeButton
+    <com.muzi.jetexpression.LikeView
         android:id="@+id/likeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:orientation="horizontal"
         android:padding="20dp" />
 
 </FrameLayout>
