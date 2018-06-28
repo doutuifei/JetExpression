@@ -11,7 +11,7 @@
 ![img](https://github.com/mzyq/JetExpression/blob/029a8b71bf4f9b9c5cf823fedb443a56837c5023/assets/img.png)
 
 1. 小红框是点赞的图标，带有一点动画。大红框是表情喷射的区间，并且是从小红框中间的位置开始喷射。就注定两个view不是一体的。
-2. 将喷射区域自定为一个遮罩层，通过```getLocationOnScreen(@Size(2) int[] outLocation)```获取点赞view的位置，并从当前位置开始喷射。
+2. 将喷射区域自定为一个遮罩层，通过```getLocationOnScreen(int[] outLocation)```获取点赞view的位置，并从当前位置开始喷射。
 3. 喷射的数量、速度、角度、方向是随机的，也可以有一些旋转和缩放的动画，还可以设定喷射的角度控制方向。
 
 ## 代码
@@ -60,3 +60,4 @@ Fork扩展后的代码：[Fork Leonids](https://github.com/mzyq/Leonids)
  ps.setFadeOut(200, new AccelerateInterpolator());
  ps.oneShot(this, 10, new DecelerateInterpolator());
 ```
+>通过这个库实现的好处：因为这个库比较好，本身动画就很流畅。相对于自己实现效果流畅太多了。[SuperLike](https://github.com/Qiu800820/SuperLike)这是一个大神自己实现的，可以参考一下，也可以对比一下效果。
